@@ -36,7 +36,6 @@ $(document).ready(function() {
     let timeText = $(this).text(); //to get the text 9AM - 9PM
     let timeBlockHour = parseHour(timeText);
     let currentEvent = getEvent(timeText);
-    console.log("current event is = " + currentEvent);
     if (currentHour > timeBlockHour) {
       //then this is the past and the time block should be grey and not be able to change event
       $(this)
